@@ -1,0 +1,52 @@
+let panelsData = [];
+let currentPanel = 0;
+
+// Função para carregar os dados
+function loadData() {
+  Promise.all([
+    fetch('/TEXTOS E IMAGENS/descricao_paineis_pagina_final.json').then(response => response.json()),
+    fetch('/TEXTOS E IMAGENS/imagens_base64.json').then(response => response.json())
+  ]).then(([textos, imagens]) => {
+    for (let i = 1; i <= 7; i++) { // Assumindo que você tem 7 painéis
+      panelsData.push({
+        description: textos[`painel${i}`],
+        image_base64: imagens[`painel${i}`],
+        audio_src: `/AUDIOS/panel_${i}_final.mp3`
+      });
+    }
+    updatePanel(0); // Atualiza para o primeiro painel
+  }).catch(error => console.error("Erro ao carregar dados:", error));
+}
+
+function updatePanel(index) {
+  const panelData = panelsData[index];
+  document.getElementById('comicPanel').src = panelData.image_base64;
+  document.getElementById('panelDescription').innerText = panelData.description;
+  document.getElementById('panelAudio').src = panelData.audio_src;
+}
+
+// Função para navegar entre os painéis
+function changePanel(offset) {
+    currentPanel += offset;
+    if (currentPanel < 0) {
+        currentPanel = 0;
+    } else if (currentPanel >= panelsData.length) {
+        currentPanel = panelsData.length - 1;
+    }
+    updatePanel(currentPanel);
+}
+
+// Event listeners para os botões de navegação
+document.getElementById('prevButton').addEventListener('click', () => changePanel(-1));
+document.getElementById('nextButton').addEventListener('click', () => changePanel(1));
+
+// Event listener para o botão de reprodução de áudio
+document.getElementById('playButton').addEventListener('click', () => {
+    const audioElement = document.getElementById('panelAudio');
+    if (audioElement) {
+        audioElement.play();
+    }
+});
+
+// Chamar loadData no final do script
+document.addEventListener('DOMContentLoaded', loadData);

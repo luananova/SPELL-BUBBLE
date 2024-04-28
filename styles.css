@@ -1,0 +1,200 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #9c27b0; /* Purple background color */
+  color: #ffffff; /* White text for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 3em;
+  color: #ffeb3b; /* Yellow text color */
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #9c27b0; /* Matching purple background */
+  padding: 20px 10px;
+  min-width: 320px; /* Largura mínima para evitar quebra */
+  flex-shrink: 0; /* Previne o encolhimento do título e subtítulo */
+}
+
+.page-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em; /* Tamanho menor do que o título principal */
+  color: #ffeb3b; /* Mesma cor amarela do título principal */
+  text-align: center; /* Centraliza o texto */
+  min-width: 320px; /* Largura mínima para evitar quebra */
+  flex-shrink: 0; /* Previne o encolhimento do título e subtítulo */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.image-container,
+.description-container {
+  flex: 1 1 50%; /* Cresce e ocupa metade do espaço disponível */
+  box-sizing: border-box; /* Padding e border inclusos na largura */
+}
+
+.image-container {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-box {
+  width: 100%; /* Ajusta para o máximo possível dentro do container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.description-container {
+  flex: 1; /* Cresce para ocupar o espaço disponível */
+  max-width: 50%; /* Metade da largura do container */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+  margin-left: 20px; /* Espaço entre a imagem e o texto */
+  height: 100%; /* Altura total do container */
+  padding: 20px;
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho do container */
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para contraste */
+  border-radius: 8px;
+  align-items: center;
+  position: relative; /* Necessário para posicionar os botões absolutamente em relação a esse container */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza conteúdo horizontalmente */
+}
+
+.buttons-container,
+#panelAudio {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  max-width: 100%; /* Ensures buttons are centered and within the container */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffc107; /* Yellow button background */
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: #ffeb3b; /* Brighter yellow on hover/focus */
+  outline: 2px solid #fff; /* White outline for focus */
+}
+
+footer {
+  width: 100%; /* Garante que o footer acompanhe a largura do container */
+  text-align: right;
+  padding: 10px 20px;
+  margin-top: 30px;
+  color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+  body,
+  html {
+    padding-top: 0;
+  }
+
+  .page-title {
+    font-size: 2em;
+    text-align: center;
+    width: auto; /* Permite que o título se ajuste ao conteúdo */
+    position: static; /* Remove o posicionamento fixo */
+  }
+
+  .page-subtitle {
+    text-align: center;
+    font-size: 0.8em; /* Tamanho menor do que o título principal */
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto;
+    padding: 0;
+    min-width: 320px;
+    margin-top: 50px;
+  }
+
+  .image-container,
+  .description-container {
+    max-width: 100%; /* Ajusta para a largura total em dispositivos móveis */
+    width: 90%; /* Reduz a largura para dar margem nas laterais */
+    margin-top: 20px; /* Adiciona margem superior para separar imagem do título */
+    min-width: 320px;
+  }
+
+  .image-container img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do seu container */
+    height: auto; /* Altura automática para manter proporções corretas */
+    min-height: 100%; /* Garante que a imagem tenha uma altura mínima */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorção */
+  }
+
+  .buttons-container {
+    position: static;
+    transform: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image-container img {
+    height: auto;
+    max-height: 100%;
+  }
+
+  #panelAudio {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 100%; /* Ajusta a largura do reprodutor para caber no dispositivo */
+  }
+
+  button {
+    margin: 15px 5px;
+  }
+
+  footer {
+    text-align: center; /* Centraliza o texto do footer em dispositivos móveis */
+  }
+}

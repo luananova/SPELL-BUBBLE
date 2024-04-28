@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spell Bubble - Magical Comic Storyteller</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" role="main">
+      <header class="page-title" aria-label="Spell Bubble">
+        SPELL BUBBLE
+        <div class="page-subtitle">Magical Comic Storyteller</div>
+      </header>
+      <div class="image-container">
+        <div class="image-box">
+          <img src="" alt="Comic Panel" id="comicPanel" />
+          <div class="buttons-container">
+            <button id="prevButton" aria-label="Go to previous panel">
+              Back
+            </button>
+            <button id="playButton" aria-label="Play audio description">
+              Play / Pause
+            </button>
+            <button id="nextButton" aria-label="Go to next panel">Next</button>
+          </div>
+          <audio id="panelAudio" controls src=""></audio>
+          <!-- Moved audio control here -->
+        </div>
+      </div>
+      <div class="description-container">
+        <h2 id="panelTitle">Panel 1</h2>
+        <p id="panelDescription"></p>
+      </div>
+      <footer class="copyright">
+        © 2023 by Luana Nova. All rights reserved.
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
