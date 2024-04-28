@@ -1,0 +1,185 @@
+{
+    "painel1": {
+        "narrador": [
+            "Reunion in London."
+        ],
+        "personagens": {
+            "Daredevil": {
+                "x": 81,
+                "y": 196,
+                "w": 123,
+                "h": 106,
+                "fala": "Silver Streak, the speed king!.. And Whiz!... I thought you two were back in the United States fighting gangsters!"
+            },
+            "Churchill": {
+                "x": 269,
+                "y": 232,
+                "w": 105,
+                "h": 86,
+                "fala": null
+            },
+            "Silver Streak": {
+                "x": 459,
+                "y": 168,
+                "w": 104,
+                "h": 104,
+                "fala": "We were... Until we discovered there were worse gangsters on this side of the pond... Hitler and company!"
+            },
+            "Whiz": {
+                "x": 571,
+                "y": 182,
+                "w": 123,
+                "h": 89,
+                "fala": "Pip... Pip! \"Fawncy\" meeting you here!"
+            }
+        }
+    },
+    "painel2": {
+        "narrador": [],
+        "personagens": {
+            "Churchill": {
+                "x": 17,
+                "y": 255,
+                "w": 123,
+                "h": 179,
+                "fala": "And now, gentlemen, let's get down to business. First, Silver Streak, I should like to hear your report on that mysterious cottage on the downs!"
+            },
+            "Daredevil": {
+                "x": 163,
+                "y": 249,
+                "w": 47,
+                "h": 65,
+                "fala": null
+            },
+            "Silver Streak": {
+                "x": 302,
+                "y": 251,
+                "w": 49,
+                "h": 76,
+                "fala": null
+            },
+            "Whiz": {
+                "x": 354,
+                "y": 245,
+                "w": 36,
+                "h": 82,
+                "fala": "Don't make a hero out of me, Silver Streak... I'm too modest."
+            }
+        }
+    },
+    "painel3": {
+        "narrador": [],
+        "personagens": {
+            "Silver Streak": {
+                "x": 37,
+                "y": 258,
+                "w": 131,
+                "h": 179,
+                "fala": "I believe they're keeping pigeons in violation of the war regulations! Whiz nailed one as it was entering a window of the cottage!"
+            },
+            "Whiz": {
+                "x": 183,
+                "y": 237,
+                "w": 67,
+                "h": 269,
+                "fala": "I pulled a power-dive on him!"
+            },
+            "Churchill": {
+                "x": 260,
+                "y": 314,
+                "w": 120,
+                "h": 156,
+                "fala": "Did it carry a message?"
+            }
+        }
+    },
+    "painel4": {
+        "narrador": [],
+        "personagens": {
+            "Silver Streak": {
+                "x": 33,
+                "y": 174,
+                "w": 137,
+                "h": 317,
+                "fala": "No! I suspect the message had already been delivered... To Hitler!"
+            },
+            "Churchill": {
+                "x": 203,
+                "y": 199,
+                "w": 150,
+                "h": 284,
+                "fala": "There is only one thing to do... Go back and keep an eye on the place. But be careful! We are pitted against desperate, cunning men!"
+            }
+        }
+    },
+    "painel5": {
+        "narrador": [
+            "Leaving Daredevil and Churchill, Silver Streak and Whiz zip past a London Bobby."
+        ],
+        "personagens": {
+            "Silver Streak": {
+                "x": 21,
+                "y": 127,
+                "w": 147,
+                "h": 107,
+                "fala": "Shall we take a train, Whiz?"
+            },
+            "Whiz": {
+                "x": 177,
+                "y": 91,
+                "w": 187,
+                "h": 90,
+                "fala": "With our speed? Don't be a sap!"
+            },
+            "O Policial": {
+                "x": 62,
+                "y": 310,
+                "w": 68,
+                "h": 214,
+                "fala": "Blimey! I must be seeing things!"
+            }
+        }
+    },
+    "painel6": {
+        "narrador": [
+            "On a few minutes, they reach a dismal stretch of sand on the North Downs, miles from London."
+        ],
+        "personagens": {
+            "Silver Streak": {
+                "x": 573,
+                "y": 148,
+                "w": 91,
+                "h": 116,
+                "fala": "That window!... It's opening! Get set, Whiz... You may have work to do!"
+            },
+            "Whiz": {
+                "x": 436,
+                "y": 194,
+                "w": 300,
+                "h": 110,
+                "fala": "I'll let him have both barrels!"
+            }
+        }
+    },
+    "painel7": {
+        "narrador": [
+            "A carrier pigeon flies from the lighted window. Whiz takes off from Silver Streak's shoulder."
+        ],
+        "personagens": {
+            "Silver Streak": {
+                "x": 19,
+                "y": 166,
+                "w": 118,
+                "h": 382,
+                "fala": "Okay, Whiz! Do your stuff!"
+            },
+            "Whiz": {
+                "x": 162,
+                "y": 152,
+                "w": 210,
+                "h": 203,
+                "fala": "Sixty miles an hour with gas to spare!"
+            }
+        }
+    }
+}
